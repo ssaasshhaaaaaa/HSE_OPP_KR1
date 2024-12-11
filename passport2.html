@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function edit() {
+            const surname = document.getElementsByTagName('div')[6]
+            const name = document.getElementsByTagName('div')[7]
+            const date = document.getElementsByTagName('div')[10]
+            if (surname.innerHTML == "Горностаева") {
+                surname.innerHTML = 'Gornostaeva'
+                name.innerHTML = 'Alexandra'
+                date.innerHTML = 'XIII.I.MMV'
+            }
+            else {
+                surname.innerHTML = 'Горностаева'
+                name.innerHTML = 'Александра'
+                date.innerHTML = '13.01.2005'
+            }
+        }
+    </script>
+    <title>Изменяем кириллицу на латиницу по клику</title>
+</head>
+
+<body style="background-image: url(./passport.jpg); background-repeat: no-repeat; background-position: center-bottom;">
+    <div style="margin-top: 76px; margin-left: 150px;">ГУ МДВ ГУГУГУ</div>
+    <div style="margin-top: 65px; margin-left: 100px;">01.01.01</div>
+    <div style="margin-top: -18px; margin-left: 300px;">125-312</div>
+    <div style="margin-top: 60px; margin-left: 60px;">подпись</div>
+    <div style="margin-top: -45px; margin-left: 360px;">007</div>
+    <div style="margin-top: 35px; margin-left: 330px;">еще подпись</div>
+    <div style="margin-top: 125px; margin-left: 250px;">Горностаева</div>
+    <div style="margin-top: 35px; margin-left: 200px;">Александра</div>
+    <div style="margin-top: 10px; margin-left: 230px;">Валерьевна</div>
+    <div style="margin-top: 10px; margin-left: 200px;">ЖЕН</div>
+    <div style="margin-top: -18px; margin-left: 300px;">13.01.2005</div>
+    <div style="margin-top: 8px; margin-left: 230px;">Мск</div>
+    <div style="margin-top: -130px; margin-left: 10px;"><img src="./minion.jpg" width="150px%"></div>
+    <br>
+    <button type="button" onclick="edit()">Меняем</button>
+    <br>
+    <button type="button" onclick="window.location.href='./other.html'">Назад</button>
+</body>
+
+</html>
