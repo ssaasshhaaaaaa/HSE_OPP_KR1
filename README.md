@@ -1,1 +1,1 @@
-https://0nuri.github.io/HSE_OPP-KR1/
+(https://ssaasshhaaaaaa.github.io/HSE_OPP_KR1/)
